@@ -7,6 +7,8 @@ b = 1; % damping coefficient Nm/(rad/s)
 omega0 = 0;  % rad/s
 theta0 = 0;  % rad
 
+%set_param('Project1_shaft/Simple Shaft/IntegrateAcceleration', 'Integrator', '3')
+
 tout = 25;
 dt = [1 0.1 0.001];
 
@@ -21,11 +23,11 @@ t = 0:h:tout;
 y = zeros(size(t));
 y(1) = omega0;
 
-tic;
+tStart = cputime;
 for k = 1:length(t)-1
     y(k+1) = y(k) + h * f(t(k), y(k));
 end
-cpu_time = toc;
+tEnd = cputime - tStart;
 
 % Calculate theoretical solution for comparison (for step input)
 w_theoretical = omega0 * exp(-b*t/J) + (const_torque/b) * (1 - exp(-b*t/J));
@@ -33,21 +35,22 @@ w_theoretical = omega0 * exp(-b*t/J) + (const_torque/b) * (1 - exp(-b*t/J));
 % Calculate maximum error
 max_error = max(abs(y - w_theoretical));
 
-cpu_time1(end+1) = cpu_time;
+cpu_time1(end+1) = tEnd;
 max_error1(end+1) = max_error;
 % Damping Force
-F_b = b*y;
+F_b = b*y;                  % <----- IS THIS BEING USED
 
 h = 0.1;
 t = 0:h:tout;
 y = zeros(size(t));
 y(1) = omega0;
 
-tic;
-for k = 1:length(t)-1
+tStart = cputime;
+for k = 1:length(t)-1;
     y(k+1) = y(k) + h * f(t(k), y(k));
 end
-cpu_time = toc;
+tEnd = cputime - tStart;
+disp(['Time: ', num2str(tEnd)]);
 
 % Calculate theoretical solution for comparison (for step input)
 w_theoretical = omega0 * exp(-b*t/J) + (const_torque/b) * (1 - exp(-b*t/J));
@@ -55,7 +58,7 @@ w_theoretical = omega0 * exp(-b*t/J) + (const_torque/b) * (1 - exp(-b*t/J));
 % Calculate maximum error
 max_error = max(abs(y - w_theoretical));
 
-cpu_time1(end+1) = cpu_time;
+cpu_time1(end+1) = tEnd;
 max_error1(end+1) = max_error;
 
 h = 0.001;
@@ -63,11 +66,11 @@ t = 0:h:tout;
 y = zeros(size(t));
 y(1) = omega0;
 
-tic;
+tStart = cputime;
 for k = 1:length(t)-1
     y(k+1) = y(k) + h * f(t(k), y(k));
 end
-cpu_time = toc;
+tEnd = cputime - tStart;
 
 % Calculate theoretical solution for comparison (for step input)
 w_theoretical = omega0 * exp(-b*t/J) + (const_torque/b) * (1 - exp(-b*t/J));
@@ -75,7 +78,7 @@ w_theoretical = omega0 * exp(-b*t/J) + (const_torque/b) * (1 - exp(-b*t/J));
 % Calculate maximum error
 max_error = max(abs(y - w_theoretical));
 
-cpu_time1(end+1) = cpu_time;
+cpu_time1(end+1) = tEnd;
 max_error1(end+1) = max_error;
 F_b = b*y;
 
@@ -87,7 +90,7 @@ t = 0:h:tout;
 y = zeros(size(t));
 y(1) = omega0;
 
-tic;
+tStart = cputime;
 for k = 1:length(t)-1
     k1 = f(t(k), y(k));
     k2 = f(t(k) + 0.5*h, y(k) + 0.5*h*k1);
@@ -95,8 +98,9 @@ for k = 1:length(t)-1
     k4 = f(t(k) + h, y(k) + h*k3);
 
     y(k+1) = y(k) + (1/6) * (k1 + 2*k2 + 2*k3 + k4) * h;
+    tEnd = cputime - tStart;
 end
-cpu_time = toc;
+%tEnd = cputime - tStart;
 
 % Calculate theoretical solution for comparison (for step input)
 w_theoretical = omega0 * exp(-b*t/J) + (const_torque/b) * (1 - exp(-b*t/J));
@@ -104,7 +108,7 @@ w_theoretical = omega0 * exp(-b*t/J) + (const_torque/b) * (1 - exp(-b*t/J));
 % Calculate maximum error
 max_error = max(abs(y - w_theoretical));
 
-cpu_time2(end+1) = cpu_time;
+cpu_time2(end+1) = tEnd;
 max_error2(end+1) = max_error;
 F_b = b*y;
 
@@ -113,7 +117,7 @@ t = 0:h:tout;
 y = zeros(size(t));
 y(1) = omega0;
 
-tic;
+tStart = cputime;
 for k = 1:length(t)-1
     k1 = f(t(k), y(k));
     k2 = f(t(k) + 0.5*h, y(k) + 0.5*h*k1);
@@ -122,7 +126,7 @@ for k = 1:length(t)-1
 
     y(k+1) = y(k) + (1/6) * (k1 + 2*k2 + 2*k3 + k4) * h;
 end
-cpu_time = toc;
+tEnd = cputime - tStart;
 
 % Calculate theoretical solution for comparison (for step input)
 w_theoretical = omega0 * exp(-b*t/J) + (const_torque/b) * (1 - exp(-b*t/J));
@@ -130,7 +134,7 @@ w_theoretical = omega0 * exp(-b*t/J) + (const_torque/b) * (1 - exp(-b*t/J));
 % Calculate maximum error
 max_error = max(abs(y - w_theoretical));
 
-cpu_time2(end+1) = cpu_time;
+cpu_time2(end+1) = tEnd;
 max_error2(end+1) = max_error;
 F_b = b*y;
 
@@ -139,7 +143,7 @@ t = 0:h:tout;
 y = zeros(size(t));
 y(1) = omega0;
 
-tic;
+tStart = cputime;
 for k = 1:length(t)-1
     k1 = f(t(k), y(k));
     k2 = f(t(k) + 0.5*h, y(k) + 0.5*h*k1);
@@ -148,7 +152,7 @@ for k = 1:length(t)-1
 
     y(k+1) = y(k) + (1/6) * (k1 + 2*k2 + 2*k3 + k4) * h;
 end
-cpu_time = toc;
+tEnd = cputime - tStart;
 
 % Calculate theoretical solution for comparison (for step input)
 w_theoretical = omega0 * exp(-b*t/J) + (const_torque/b) * (1 - exp(-b*t/J));
@@ -156,7 +160,7 @@ w_theoretical = omega0 * exp(-b*t/J) + (const_torque/b) * (1 - exp(-b*t/J));
 % Calculate maximum error
 max_error = max(abs(y - w_theoretical));
 
-cpu_time2(end+1) = cpu_time;
+cpu_time2(end+1) = tEnd;
 max_error2(end+1) = max_error;
 F_b = b*y;
 
@@ -189,6 +193,7 @@ hold on
 plot(cpu_time2, max_error2, '-o');
 legend('Euler', 'RK4');
 hold off
+
 
 %Contour Plots (Don't work right now because of the singular inputs)
 % figure;
