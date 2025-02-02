@@ -1,7 +1,7 @@
 # Project 1
 ## Part 1
 
-Open [Project1_Part1.m](Project1_Part1.m) and [Project1_shaft.slx](Project1_shaft.slx) in order view the Matlab code for Part 1
+Open [Project1_Part1.m](Project1_Part1.m) and [Project1_shaft.slx](Project1_shaft.slx) to view the Matlab code for Part 1
 
 The Project1_Part1.m file uses the following default values and can be modified by the user:
 - const_torque = 1    Torque input in Nm
