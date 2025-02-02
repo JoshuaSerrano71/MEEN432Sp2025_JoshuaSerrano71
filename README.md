@@ -18,6 +18,9 @@ Project1_Part1.m outputs three graphs:
 - Max Simulation Time vs. Time Step
 - CPU Time vs. Time Step
 - Max Simulation Time vs. CPU Time
+  
+Here is an example of what the output should look like
+![Alt Text](Project1_Part1_plots.png)
 
 ## Part 2
 
