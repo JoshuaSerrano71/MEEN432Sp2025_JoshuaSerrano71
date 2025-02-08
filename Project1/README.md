@@ -2,7 +2,7 @@
 ## Part 1
 
 Before downloading the files above please ensure there are no files of the same name in the folder <br>
-Open [Project1_Part1.m](Project1/Part1/Project1_Part1.m) and [Project1_shaft.slx](Project1/Project1_shaft.slx) to view the Matlab code for Part 1
+Open [Project1_Part1.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Part1/Project1_Part1.m) and [Project1_shaft.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Project1_shaft.slx) to view the Matlab code for Part 1
 
 The Project1_Part1.m file uses the following default values and can be modified by the user:
 - const_torque = 1    Torque input in Nm
@@ -21,6 +21,6 @@ Project1_Part1.m outputs three graphs:
 - Max Simulation Time vs. CPU Time
   
 Here is an example of what the output should look like
-[Project1_Part1_plots.pdf](Project1/Part1/Project1_Part1_Plots.pdf)
+[Project1_Part1_plots.pdf](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Part1/Project1_Part1_Plots.pdf)
 
 ## Part 2
