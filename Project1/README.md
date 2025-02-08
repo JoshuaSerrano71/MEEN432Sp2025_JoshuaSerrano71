@@ -63,6 +63,7 @@ Part 2 Output Variables and Plots
 Project1_Part2.m Output Varibles
 - Omega 1    Output shaft speed of S1 shaft
 - Omega 2    Output shaft speed of S2 shaft
+- Omega      Combined output shaft speed of the S1 and S2 shafts
 
 
 Project1_Part2.m will output the following plots:
@@ -71,10 +72,9 @@ Project1_Part2.m will output the following plots:
 - Figure 3: Option 1 (ODE 4) Shaft speeds (Omega 1 & 2) at various shaft stiffnesses as a function of time, where DT = 0.1
 - Figure 4: Option 1 (ODE 4) Shaft speeds (Omega 1 & 2) at various shaft stiffnesses as a function of time, where DT = 1
 - Figure 5: Option 1 (ODE 45) Shaft speeds (Omega 1 & 2) at various shaft stiffnesses as a function of time
-- Figure 6: Option 2 (ODE 45) Shaft speeds (Omega 1 & 2) at various shaft stiffnesses as a function of time
-- Figure 7: Option 2 (ODE 1, 4, 45) Shaft speeds (Omega) at various shaft stiffnesses as a function of time
-- Figure 8: Option 3 (ODE 1, 4, 45) Shaft speeds (Omega) at various shaft stiffnesses as a function of time
-- Figure 9: CPU Time vs. Time Step for Options 1, 2, and 3
+- Figure 6: Option 2 (ODE 1, 4, 45) Shaft speeds (Omega) at various shaft stiffnesses as a function of time
+- Figure 7: Option 3 (ODE 1, 4, 45) Shaft speeds (Omega) at various shaft stiffnesses as a function of time
+- Figure 8: CPU Time vs. Time Step for Options 1, 2, and 3
 
 
 
