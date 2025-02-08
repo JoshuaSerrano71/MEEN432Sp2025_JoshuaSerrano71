@@ -66,12 +66,12 @@ Project1_Part2.m Output Varibles
 
 
 Project1_Part2.m will output the following plots:
-- Figure 1: Option 1 (ODE 4) Shaft speeds (Omega 1 & 2) at various shaft stiffnesses as a function of time, where DT = 0.1 
-- Figure 2: Option 1 (ODE 4) Shaft speeds (Omega 1 & 2) at various shaft stiffnesses as a function of time, where DT = 1
-- Figure 3: 
-- Figure 4: same as Figure 1 ???
-- Figure 5: Option 1 (ODE 4) Shaft speeds (Omega 1 & 2) at various shaft stiffnesses as a function of time, where DT = 1
-- Figure 6: Option 1 (ODE 45) Shaft speeds (Omega 1 & 2) at various shaft stiffnesses as a function of time
+- Figure 1: Option 1 (ODE 1) Shaft speeds (Omega 1 & 2) at various shaft stiffnesses as a function of time, where DT = 0.1 
+- Figure 2: Option 1 (ODE 1) Shaft speeds (Omega 1 & 2) at various shaft stiffnesses as a function of time, where DT = 1
+- Figure 3: Option 1 (ODE 4) Shaft speeds (Omega 1 & 2) at various shaft stiffnesses as a function of time, where DT = 0.1
+- Figure 4: Option 1 (ODE 4) Shaft speeds (Omega 1 & 2) at various shaft stiffnesses as a function of time, where DT = 1
+- Figure 5: Option 1 (ODE 45) Shaft speeds (Omega 1 & 2) at various shaft stiffnesses as a function of time
+- Figure 6: Option 2 (ODE 45) Shaft speeds (Omega 1 & 2) at various shaft stiffnesses as a function of time
 - Figure 7: Option 2 (ODE 1, 4, 45) Shaft speeds (Omega) at various shaft stiffnesses as a function of time
 - Figure 8: Option 3 (ODE 1, 4, 45) Shaft speeds (Omega) at various shaft stiffnesses as a function of time
 - Figure 9: CPU Time vs. Time Step for Options 1, 2, and 3
