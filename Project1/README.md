@@ -24,3 +24,21 @@ Here is an example of what the output should look like
 [Project1_Part1_plots.pdf](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Part1/Project1_Part1_Plots.pdf)
 
 ## Part 2
+![*Figure 2: S1 and S2 model representation from Project 1 Part 2*](./Project1/Part2/Examples/Project1_Part2_System.png) <br>
+![Alt text](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Part2/Examples/Project1_Part2_System.png) 
+
+Open [Project1_Part2.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Part2/Project1_Part2.m) for the base code. <br>
+
+Open Simulink models for each Option: <br>
+For Option 1 open [Project1_Part2_Op1.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Part2/Project1_Part2_Op1.slx) <br>
+For Option 2 open [Project1_Part2_Op2.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Part2/Project1_Part2_Op2.slx) <br>
+For Option 3 open [Project1_Part2_Op3.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Part2/Project1_Part2_Op3.slx) <br>
+
+Once all Part 2 files downloaded (4 files) place them into the same folder and open the folder's directory in Matlab. <br>
+The following variables can be modified:
+
+
+
+
+
+
