@@ -4,7 +4,7 @@
 *Figure 1: S1 model representation from Project 1 Part 1* <br>
 
 ```markdown
-Part 1 download instructions
+Part 1 Download Instructions
 ```
 Download the Matlab code [Project1_Part1.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Part1/Project1_Part1.m) and the Simulink simulation [Project1_shaft.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Project1_shaft.slx) <br>
 
@@ -37,7 +37,7 @@ Here is an example of what the output should look like
 *Figure 2: S1 and S2 model representation from Project 1 Part 2* <br>
 
 ```markdown
-Part 2 download instructions
+Part 2 Download Instructions
 ```
 
 Download the Matlab code [Project1_Part2.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Part2/Project1_Part2.m) and the following Simulink simulations: <br>
