@@ -24,8 +24,8 @@ Here is an example of what the output should look like
 [Project1_Part1_plots.pdf](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Part1/Project1_Part1_Plots.pdf)
 
 ## Part 2
-![*Figure 2: S1 and S2 model representation from Project 1 Part 2*](./Project1/Part2/Examples/Project1_Part2_System.png) <br>
-![Alt text](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Part2/Examples/Project1_Part2_System.png) 
+![image alt](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Part2/Examples/Project1_Part2_System.png) <br>
+*Figure 2: S1 and S2 model representation from Project 1 Part 2* <br>
 
 Open [Project1_Part2.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Part2/Project1_Part2.m) for the base code. <br>
 
