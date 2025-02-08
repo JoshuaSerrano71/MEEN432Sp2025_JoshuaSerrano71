@@ -1,8 +1,8 @@
-%FOR TESTING ITERATION OF METHODS
+% FOR TESTING ITERATION OF METHODS
 solvers = {'ode1', 'ode4'};
 time_step = [0.1 1];
 
-%Initialization
+% Modifiable Variables
 omega0 = 0;
 theta0 = 0;
 const_torque=1;
@@ -11,9 +11,9 @@ J2 = 1;
 b1 = 1;
 b2 = 1;
 
-%Running Option 1
+% Running Option 1
 k_int = [10 100 1000];
-model_handle1 = 'MEEN432_Project1_Part2_Op1';
+model_handle1 = "Project1_Part2_Op1"; % This Simulink file should be in your folder directory 
 set_param(model_handle1, 'SolverName', 'ode1');
 for j = 1:length(time_step)
     figure;
@@ -21,7 +21,7 @@ for j = 1:length(time_step)
     for i=1:length(k_int)
         %tic;
         k = k_int(i);
-        out1 = sim("MEEN432_Project1_Part2_Op1.slx");
+        out1 = sim(model_handle1);
         subplot(3,1,i);
         hold on
         plot(out1.omega1);
@@ -40,7 +40,7 @@ for j = 1:length(time_step)
     for i=1:length(k_int)
         %tic;
         k = k_int(i);
-        out1 = sim("MEEN432_Project1_Part2_Op1.slx");
+        out1 = sim(model_handle1);
         subplot(3,1,i);
         hold on
         plot(out1.omega1);
@@ -58,7 +58,7 @@ subplot(3,1,1);
     for i=1:length(k_int)
         %tic;
         k = k_int(i);
-        out1 = sim("MEEN432_Project1_Part2_Op1.slx");
+        out1 = sim("Project1_Part2_Op1.slx");
         subplot(3,1,i);
         hold on
         plot(out1.omega1);
@@ -70,9 +70,9 @@ subplot(3,1,1);
     end
 
 
-%Running Option 2
+% Running Option 2
 figure;
-model_handle = 'MEEN432_Project1_Part2_Op2';
+model_handle = "Project1_Part2_Op2";
 for i = 1:length(solvers)
     for j = 1:length(time_step)
         set_param(model_handle, 'SolverName', solvers{i});
@@ -93,9 +93,9 @@ plot(out.omega);
 legend('ode1 - 0.1', 'ode1 - 1', 'ode4 - 0.1', 'ode4 - 1', 'ode45');
 
 
-%Running Option 3
+% Running Option 3
 figure;
-model_handle3 = 'MEEN432_Project1_Part2_Op3';
+model_handle3 = "Project1_Part2_Op3";
 for i = 1:length(solvers)
     for j = 1:length(time_step)
         set_param(model_handle3, 'SolverName', solvers{i});
@@ -114,12 +114,7 @@ plot(out.omega);
 legend('ode1 - 0.1', 'ode1 - 1', 'ode4 - 0.1', 'ode4 - 1', 'ode45');
 
 
-
-
-
-
-
-%cpu error
+% cpu error
 cpu_time_e1 = [0.6879 0.7412];
 cpu_time_r1 = [0.8106 0.7401];
 cpu_time_auto = 0.7935;
@@ -132,7 +127,7 @@ cpu_time_e3 = [1.201166 1.360497];
 cpu_time_r3 = [1.299591 1.478935];
 cpu_time_auto3 = 1.348127;
 
-%plotting time
+% plotting time
 figure;
 subplot(3,1,1);
 time_step = [0.1 1];
@@ -164,8 +159,3 @@ title('CPU Time vs. Time Step - Option 3')
 ylabel('Time (s)');
 xlabel('Time Step (s)');
 hold off
-
-
-
-
-
