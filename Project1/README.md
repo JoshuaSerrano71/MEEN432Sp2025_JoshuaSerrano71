@@ -8,6 +8,8 @@ Part 1 Download Instructions
 ```
 Download the Matlab code [Project1_Part1.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Part1/Project1_Part1.m) and the Simulink simulation [Project1_shaft.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project1/Project1_shaft.slx) <br>
 
+Once both Part 1 files downloaded place them into the same folder and open the folder's directory in Matlab. <br>
+
 ```markdown
 Part 1 Input Varibles
 ```
