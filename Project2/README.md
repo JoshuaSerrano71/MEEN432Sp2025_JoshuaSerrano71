@@ -8,3 +8,6 @@ TA Notes:
 1. ReadME is sufficient.
 2. Simulink needed(Week1 exempted but going forward for Week2 is necessary)
 3. Implementation of Vd = R/Psi(dot) not visible. Do this before moving forward of implementing dynamics to code.
+
+
+##Part 2
