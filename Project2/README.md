@@ -10,4 +10,4 @@ TA Notes:
 3. Implementation of Vd = R/Psi(dot) not visible. Do this before moving forward of implementing dynamics to code.
 
 
-##Part 2
+Part 2
