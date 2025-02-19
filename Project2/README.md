@@ -10,4 +10,5 @@ TA Notes:
 3. Implementation of Vd = R/Psi(dot) not visible. Do this before moving forward of implementing dynamics to code.
 
 
-Part 2
+## Part 2
+Download [project2.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project2/Part2/project2.slx) to view the Simulink file for updated project.
