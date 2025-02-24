@@ -38,23 +38,8 @@ tire_radius = 0.3;
 track = struct();
 [track.x_track, track.y_track, track.x_target, track.y_target,track.xi_track, track.yi_track, track.xo_track, track.yo_track, track.s] = plottrack(L, R, W);
 
-ft = figure();
-ft.WindowState = 'maximized';
-hold on
-plot(track.x_track, track.y_track, '--', Color=	"#D95319"); axis equal;
-plot(track.xo_track, track.yo_track, 'k'); axis equal;
-plot(track.xi_track, track.yi_track, 'k'); axis equal;
-
-axis([-300, 1200, -100, 500]); %to see the track better
-xlabel('X (meters)');
-ylabel('Y (meters)');
-title('Race Track');
-grid on;
-hold off;
-
-set_param("MEEN432_Project2_Wk3", "StopTime", "350");
+set_param("MEEN432_Project2_Wk3", "StopTime", "320");
 carsim = sim("MEEN432_Project2_Wk3.slx");
-Car_motion(carsim.X.Data, carsim.Y.Data)
 
 % Initialize variables
 laps_completed = 0;
@@ -83,6 +68,24 @@ end
 disp(['Total Laps Completed: ', num2str(laps_completed)]);
 disp('Lap Times (seconds):');
 disp(lap_times);
+
+% Plot track and car motion
+ft = figure();
+ft.WindowState = 'maximized';
+hold on
+plot(track.x_track, track.y_track, '--', Color=	"#D95319"); axis equal;
+plot(track.xo_track, track.yo_track, 'k'); axis equal;
+plot(track.xi_track, track.yi_track, 'k'); axis equal;
+
+axis([-300, 1200, -100, 500]); %to see the track better
+xlabel('X (meters)');
+ylabel('Y (meters)');
+title('Race Track');
+grid on;
+hold off;
+
+Car_motion(carsim.X.Data, carsim.Y.Data)
+
 %% Plot Track - > Making into a function for inner and outer bounds
 function [x_track, y_track, x_target, y_target, xi_track, yi_track, xo_track, yo_track, s] = plottrack(L, R, W)
     l_curve = pi*R;
