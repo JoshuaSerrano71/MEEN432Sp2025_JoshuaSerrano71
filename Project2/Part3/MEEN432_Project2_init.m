@@ -2,6 +2,7 @@
 %MEEN Project 2 Initialization
 
 %Clear Workspace
+clc
 clear
 
 %Track Info
