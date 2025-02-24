@@ -8,4 +8,4 @@
 ## Project 2: Lateral Vehicle Dynamics Simulation
 
 - [Project 2 README](Project2/README.md)
-- [Part 1](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project2/Part1/)
+- [Part 3](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project2/Part3/)
