@@ -7,7 +7,7 @@ The following Matlab code takes Dynamometer data from the epa.gov website under 
 ```markdown
 Download Instructions
 ```
-Download the Simulink model [MEEN432_Project3_start.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project3/Part1/Project3_init.m) and Matlab code [Project3_init.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project3/Part1/Project3_init.m) <br>
+Download the Simulink model [MEEN432_Project3_start.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project3/Part1/MEEN432_Project3_start.slx) and Matlab code [Project3_init.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project3/Part1/Project3_init.m) <br>
 
 The following Matlab code contains velocity dynamometer values from the EPA for Urban Driving: <br>
 Urban EPA Data: [init_urban_epa.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project3/Part1/init_urban_epa.m) <br>
