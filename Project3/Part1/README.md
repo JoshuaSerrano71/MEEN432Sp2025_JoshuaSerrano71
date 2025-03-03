@@ -7,10 +7,10 @@ The following Matlab code takes Dynamometer data from the epa.gov website under 
 ```markdown
 Download Instructions
 ```
-Download the Simulink model [MEEN432_Project3_start.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project3/Part1/Project3_init.m)(https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project3/Part1/MEEN432_Project3_start.slx)) <br>
+Download the Simulink model [MEEN432_Project3_start.slx]https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project3/Part1/Project3_init.m)(https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project3/Part1/MEEN432_Project3_start.slx)) <br>
 
 The following Matlab code contains velocity dynamometer values from the EPA for Urban and Highway Driving: <br>
-Urban EPA Data (2 cycles): [init_urban_epa_2cycle.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project3/Part1/init_urban_epa_2cycle.m) <br>
+Urban EPA Data (2 cycles): [init_urban_epa_2cycle.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project3/Part1/init_urban_epa_2cycle.m)
 Highway EPA Data: [init_highway_epa.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project3/Part1/init_highway_epa.m) <br>
 
 Once both Week 1 files are downloaded, place them into the same folder and open the folder's directory in Matlab. <br>
