@@ -27,6 +27,7 @@ F_drag = 0 <br>
 
 Either EPA data can be used for Project3_Week1.m initial conditions:
 - Urban EPA Dynamometer Data
+- Highway EPA Dynamometer Data
 - Urban EPA Dynamometer Data (2 cycles)
 
 ```markdown
