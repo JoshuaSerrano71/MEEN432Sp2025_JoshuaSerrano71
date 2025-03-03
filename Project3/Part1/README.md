@@ -34,11 +34,6 @@ Either EPA data can be used for Project3_Week1.m initial conditions:
 - Urban EPA Dynamometer Data (2 cycles)
 
 ```markdown
-Running the code
-```
-Run the Matlab code previously downloaded [Project3_init.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project3/Part1/Project3_init.m)
-
-```markdown
 Output Plot
 ```
 Urban EPA Data: Simulated Vehicle Velocity vs Time
