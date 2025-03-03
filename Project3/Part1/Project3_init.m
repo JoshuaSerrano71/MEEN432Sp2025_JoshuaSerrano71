@@ -7,8 +7,7 @@ I = 1600;
 I_w = 0;
 F_drag = 0;
 
-% Importing speed values
-init_highway_epa
+% Importing speed values (use init_urban_epa or init_urban_epa_2cycle)
 init_urban_epa_2cycle
 
 % Running simulink
