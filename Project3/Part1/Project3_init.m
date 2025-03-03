@@ -9,9 +9,10 @@ F_drag = 0;
 
 % Importing speed values
 init_highway_epa
-init_urban_epa
+init_urban_epa_2cycle
 
 % Running simulink
+set_param("MEEN432_Project3_start", 'StopTime', string(length(urban_epa)))
 simout = sim("MEEN432_Project3_start");
 
 %% plotting epa cycle (urban)
