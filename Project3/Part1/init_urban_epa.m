@@ -1370,5 +1370,3 @@ urban_epa = [0
 0
 0];
 
-
-plot(time, urban_epa)
