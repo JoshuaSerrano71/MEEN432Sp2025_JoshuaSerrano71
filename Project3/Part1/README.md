@@ -1,13 +1,13 @@
 # Project	3	Week	1	Submission
-##  Longitudinal simulation model of a vehicle
+##  Simple Longitudinal simulation model of a vehicle
 
-The following Matlab code takes Dynamometer data from the epa.gov website under their fuel and emissions testing section for Urban and Highway driving.
+The following Matlab code takes Dynamometer data from the epa.gov website under their fuel and emissions testing section for Urban and Highway driving. This model is a simpler model without tire slip and only consists of the wheels and chasis. The model starts by reading the velocity data from the EPA table and converting it from miles per hour to meters per second. It then goes through a PID controller that takes in the desired velocity from the EPA data and compares it to the current velocity of the car. A throttle and brake percentage command is calucated from the output of the PID controller block. These values then go to the power train and brake systems respectively to calculate wheel torque, inertia, and force created by the brakes. This is then put into the wheel subsystem and finally through the longitudinal subsystem to output acceleration, velocity, and position of the car.
 
 
 ```markdown
 Download Instructions
 ```
-Download the Matlab code [Project3_init.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project3/Part1/Project3_init.m) and the Simulink simulation [MEEN432_Project3_start.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project3/Part1/MEEN432_Project3_start.slx) <br>
+Download the Simulink model [MEEN432_Project3_start.slx]([https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project3/Part1/Project3_init.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project3/Part1/MEEN432_Project3_start.slx)) and the MATLAB code [init_highway_epa.m]([https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project3/Part1/MEEN432_Project3_start.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project3/Part1/init_highway_epa.m)) <br>
 
 The following Matlab code contains velocity dynamometer values from the EPA for Urban and Highway Driving: <br>
 Urban EPA Data (2 cycles): [init_urban_epa_2cycle.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project3/Part1/init_urban_epa_2cycle.m) <br>
