@@ -29,7 +29,7 @@ Once the Simulink model and desired EPA files from Week 1 files are downloaded, 
 Input Variables
 ```
 Project3_Week1.m uses the following default values: <br>
-r = 0.3  ------- Radius in m <br> 
+r = 0.3  ------- Radius of wheels in m <br> 
 m = 1000 ---- Mass of car in kg <br>
 I = 1600 ------ Inertia for the car in kg-m^2 <br>
 I_w = 0  ------- Inertia for the wheel in kg-m^2 <br>
