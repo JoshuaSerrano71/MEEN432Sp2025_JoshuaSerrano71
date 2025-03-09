@@ -27,7 +27,7 @@ Urban EPA Data (2 cycles): [init_urban_epa_2cycle.m](https://github.com/JoshuaSe
 The following Matlab code contains velocity dynamometer values from the EPA for Highway Driving: <br>
 Highway EPA Data: [init_highway.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project3/Part1/init_highway_epa.m) <br>
 
-Once the Simulink model and desired EPA files from Week 1 files are downloaded, place them into the same folder and open the folder's directory in Matlab. The Project 3 init script is set to run the urban EPA cycle but this can be changed by running the desired EPA script first and changing the variable values in the MODEL INIT section of the script. <br>
+Once the Simulink model and desired EPA files from Week 1 files are downloaded, place them into the same folder and open the folder's directory in Matlab. The Project 3 init script is set to run the urban EPA cycle, but this can be changed by running the desired EPA script first, which will add the data to your workspace as urban_epa or highway_epa. Finally, change the variable values in the MODEL INIT section of the script to either urban_epa or highway_epa for urban or highway EPA data, respectively. <br>
 
 ```markdown
 Input Variables
