@@ -53,7 +53,7 @@ Either EPA data can be used for Project3_init.m initial conditions:
 - Urban EPA Dynamometer Data (2 cycles)
 
 ```markdown
-Output Plot
+Output
 ```
-EPA Data: Simulated Energy Consumption vs Time
+'total_power' of the electric motor is added to Workspace
 
