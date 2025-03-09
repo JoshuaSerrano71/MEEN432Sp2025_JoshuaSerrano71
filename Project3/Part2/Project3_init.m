@@ -25,6 +25,8 @@ time = urban_time; % highway_time
 set_param("MEEN432_Project3_start", 'StopTime', string(length(urban_epa)))
 simout = sim("MEEN432_Project3_start");
 
+total_power = sum(simout.p_m.Data);
+
 %% plotting epa cycle (urban)
 f = figure;
 plot(time, epa, 'r');
