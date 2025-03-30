@@ -24,7 +24,7 @@ hold on
 plot(time, epa + 3, '--b');
 plot(time, epa - 3, '--b');
 f.WindowState = 'maximized';
-plot(simout.veh_speed, 'g');
+plot(simout.ActualSpeed, 'g');
 title('Simulated Vehicle Velocity vs Time')
 ylabel('Velocity (mph)')
 xlabel('Time (s)')
