@@ -3,7 +3,7 @@
 
 The following code takes Dynamometer data from the epa.gov website under their fuel and emissions testing section for Urban driving. This model is simpler, without tire slip, and consists of wheels and chassis. The model starts by reading the velocity data from the EPA table and converting it from miles per hour to meters per second. It then goes through a PID controller that takes in the desired velocity from the EPA data and compares it to the current velocity of the car. A throttle and brake percentage command is calculated from the output of the PID controller block. These values then go to the power train and brake systems to calculate wheel torque and inertia and force the brakes to create. This is then put into the wheel subsystem and finally through the longitudinal subsystem to output acceleration, velocity, and position of the car. <br>
 
-This code expands upon the Part 1 code by incorporating an electric motor into the simulation, along with a single-speed transmission and unlimited battery power to calculate the energy efficiency. To calculate the energy consumption of the motor, the power must be calculated using the equation below, in *Figure 1*. Where τ is the torque of the motor, ω is the angular velocity of the motor, and η is the efficiency raised to sign of τ and ω of the motor.
+This code expands upon the Part 1 code by incorporating an electric motor into the simulation, along with a single-speed transmission and a battery system to calculate the energy efficiency. To calculate the energy consumption of the motor, the power must be calculated using the equation below, in *Figure 1*. Where τ is the torque of the motor, ω is the angular velocity of the motor, and η is the efficiency raised to sign of τ and ω of the motor.
 
 
 ```markdown
@@ -45,5 +45,6 @@ Either EPA data can be used for Project3_run.m initial conditions:
 ```markdown
 Output
 ```
-plot of simulated vehicle speed vs desired vehicle speed
+A plot including both the simulated vehicle speed and the desired vehicle speed vs time along with a 3 mph error band
+The predicted power consumption for this trip is saved to the workbench as total_power
 
