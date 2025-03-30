@@ -9,12 +9,12 @@ datCar.m = 1600; %kg      -  Car Mass
 
 %Vehicle Drag Coefficients
 
-datCar.C0 = 0.0041;         %in N
-datCar.C1 = 0.000066;       %in N/(m/s)
+datCar.C0 = 0.0041;         % in N
+datCar.C1 = 0.000066;       % in N/(m/s)
 % parameters for calculation of C2
-Rho =1.225;          %Kg/m^3
-A  = 2.6;           % m^2 (projected area)
-Cd = 0.36;           %Aerodynamic drag coefficient
+Rho =1.225;                 % Kg/m^3
+A  = 2.6;                   % m^2 (projected area)
+Cd = 0.36;                  % Aerodynamic drag coefficient
 datCar.C2 = 0.5*Rho*A*Cd;   % in N/(m/s)^2
 
 % Vehicle Initial Conditions
@@ -37,7 +37,7 @@ datCar.maxAlpha = 2 / 180 * pi;  % maximum alpha value to be used in calc (rad)
 datCar.Iw = 0.5*7*(datCar.radius^2);
 
 datCar.C_lambda = 50; % longitudinal stiffness (N/Kg)
-datCar.lambda_max = 0.1; %maximum tire slip ratio before saturation
+datCar.lambda_max = 0.1; % maximum tire slip ratio before saturation
 datCar.tire_mu = 1.0;
 
 
@@ -53,6 +53,8 @@ datCar.FDeta = 0.95;
 
 %Brake
 datCar.maxBrakeTorque = 50000;
+datCar.brakeFriction = 0.4;
+datCar.brakeGeometricDesign = 1;
 
 % track Data
 track.radius = 200; %m radius of curved sections
@@ -93,16 +95,16 @@ datMotor.inertia = 0.5; % Kg-m^2
 % Conversion
 mph2mps = 1600/3600;
 
-figure
-[C,h] = contour( datMotor.eta_speed, datMotor.eta_torque, datMotor.eta_val);
-clabel(C,h)
-h.LineColor='k';
-xlabel('Speed (rpm)');
-ylabel('Torque (Nm)');
-title('Efficiency (%) Contour Maps - Project 3');
-grid
-hold on
-plot(datMotor.rpm,datMotor.maxtorque,'--')
+% figure
+% [C,h] = contour( datMotor.eta_speed, datMotor.eta_torque, datMotor.eta_val);
+% clabel(C,h)
+% h.LineColor='k';
+% xlabel('Speed (rpm)');
+% ylabel('Torque (Nm)');
+% title('Efficiency (%) Contour Maps - Project 3');
+% grid
+% hold on
+% plot(datMotor.rpm,datMotor.maxtorque,'--')
 
 %Battery Data
 
@@ -113,11 +115,9 @@ datBat.C = 150; % Amp hr total battery capacity
 datBat.numSeries = 96;
 datBat.numParallel = 74;
 
-figure
-plot(datBat.SOC,datBat.OCV)
-xlabel('Cell State of Charge ')
-ylabel('Cell Open Circuit Volage (OCV) - Volts')
-title('Lithium Ion Cell Characteristic - Project 3')
-grid
-
-
+% figure
+% plot(datBat.SOC,datBat.OCV)
+% xlabel('Cell State of Charge ')
+% ylabel('Cell Open Circuit Volage (OCV) - Volts')
+% title('Lithium Ion Cell Characteristic - Project 3')
+% grid
