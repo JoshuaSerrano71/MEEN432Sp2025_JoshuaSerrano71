@@ -27,7 +27,7 @@ Highway EPA Data: [init_highway.m](https://github.com/JoshuaSerrano71/MEEN432Sp2
 Procedure
 ```
 - Place all the files into the same folder and open the folder's directory in Matlab. <br>
-- Run the p3_init.m <br>
+- Run the p3_init.m script <br>
 - Run the Project3_run.m script <br>
 
 Optionally, the Project3_run.m script's EPA cycle can be changed by running the desired EPA script first, adding the data to your workspace as urban_epa or highway_epa. Finally, change the variable values in the MODEL INIT section of the script to either urban_epa or highway_epa for urban or highway EPA data, respectively. <br>
