@@ -12,6 +12,17 @@ carData.init.vy0 = 0;       % m/s - Initial Velocity in Y of the Car
 carData.init.omega0 = 0;    % rad/s - Initial Yaw Rate of the Car
 carData.init.psi0 = 0;      % rad - Initial Heading of the Car
 
+%% Track Information
+track_length = 900;
+track_radius = 200;
+track_width = 15;
+delta_s = 1;
+delta_theta = 1;
+path.width = track_width;
+path.l_st = track_length;
+path.radius = track_radius;
+[x_track,y_track] = trackinfo(track_length,track_radius,0,delta_s,delta_theta);
+
 %% Vehicle Tire Information 
 carData.Calpha_f = 40000;           % N/rad - Front Tire Coefficient (slope)
 carData.Calpha_r = 40000;           % N/rad - Rear Tire Coefficient (slope)
@@ -21,13 +32,15 @@ carData.lr = 1.5;                   % m - Distance from CG to rear axis
 carData.lf = 1.0;                   % m - Distance from CG to front axis
 carData.r = 0.3;                    % m - Radius of tires
 carData.Iw = 0.5*7*(carData.r^2);   % kg-m^2 - Inertia of the tire
-track_radius = 200;
 carData.understeerCoeff = ...       % Understeering Coefficient 
     carData.Mass / ((carData.lr + carData.lf) * track_radius) ...
       * (carData.lr / carData.Calpha_f - ...
          carData.lf / carData.Calpha_r);
 
 carData.maxAlpha = 4 / 180 * pi;    % Max Alpha Angle for Tires
+
+%% Brake Information
+datCar.maxBrakeTorque = 50000;
 
 %% Gear Ratio Information
 carData.FDG = 2.5; % Final Drive Gear Ratio
@@ -109,3 +122,19 @@ batData.numParallel = 74; % Number of Cells in Parallel
 %% Conversions
 mph2mps = 1600/3600;
 rps2rpm = 60/(2*pi());
+
+%% Functions
+function [xp,yp] = trackinfo(L,R,offset,delta_s,delta_theta)
+    R = R+offset;
+    sx1 = linspace(0, L, (L - 0) / delta_s + 1);
+    sx2 = linspace(L, 0, (L - 0) / delta_s + 1);
+
+    sy1 = linspace(-offset, -offset, (L - 0) / delta_s + 1);
+    sy2 = linspace(400+offset, 400+offset, (L - 0) / delta_s + 1);
+
+    t1 = linspace( -pi/2, pi/2, (pi / (delta_theta*pi/180)));
+    t2 = linspace( pi/2, 3*pi/2, (pi / (delta_theta*pi/180)));
+
+    xp = [sx1 , R*cos(t1) + L , sx2, R*cos(t2)];
+    yp = [sy1, R*sin(t1) + R-offset , sy2 , R*sin(t2) + R-offset];
+end
