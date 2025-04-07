@@ -118,7 +118,7 @@ clabel(C,h)
 h.LineColor='k';
 xlabel('Speed (rpm)');
 ylabel('Torque (Nm)');
-title('Efficiency (%) Contour Maps - Project 3');
+title('Efficiency (%) Contour Maps - Project 4');
 grid
 hold on
 plot(datMotor.rpm,datMotor.maxtorque,'--')
@@ -136,7 +136,7 @@ figure
 plot(datBat.SOC,datBat.OCV)
 xlabel('Cell State of Charge ')
 ylabel('Cell Open Circuit Volage (OCV) - Volts')
-title('Lithium Ion Cell Characteristic - Project 3')
+title('Lithium Ion Cell Characteristic - Project 4')
 grid
 
 %% Functions
