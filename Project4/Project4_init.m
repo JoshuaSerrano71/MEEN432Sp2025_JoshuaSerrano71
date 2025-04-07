@@ -154,3 +154,4 @@ function [xp,yp] = trackinfo(L,R,offset,delta_s,delta_theta)
     xp = [sx1 , R*cos(t1) + L , sx2, R*cos(t2)];
     yp = [sy1, R*sin(t1) + R-offset , sy2 , R*sin(t2) + R-offset];
 end
+
