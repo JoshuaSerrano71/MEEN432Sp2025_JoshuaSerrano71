@@ -30,7 +30,6 @@ Output
 ```
 Project4_init.m <br>
 - Figure 1: Efficiency (%) Contour Maps
-  - Figure 1 is a work in progress as there are multiple colored lines without labels 
 - Figure 2: Lithium Ion Cell Characteristic
   
 <br>
