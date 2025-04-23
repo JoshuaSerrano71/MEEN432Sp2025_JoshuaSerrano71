@@ -19,7 +19,8 @@ Cd = 0.36;           %Aerodynamic drag coefficient
 datCar.C2 = 0.5*Rho*A*Cd;   % in N/(m/s)^2
 
 % Car Velocity Data
-datCar.vxd = 15.0;          % m/s - Desired Velocity in X
+datCar.vxd_straight = 25;          % m/s - Desired Velocity in X
+datCar.vxd_curve = 15;
 datCar.vx_threshold1 = 0.1; % m/s - Threshold for Velocity in X
 datCar.lookahead_dist = 10;
 
@@ -112,16 +113,16 @@ datMotor.inertia = 0.5; % Kg-m^2
 % Conversion
 mph2mps = 1600/3600;
 
-figure
-[C,h] = contour( datMotor.eta_speed, datMotor.eta_torque, datMotor.eta_val);
-clabel(C,h)
-h.LineColor='k';
-xlabel('Speed (rpm)');
-ylabel('Torque (Nm)');
-title('Efficiency (%) Contour Maps - Project 4');
-grid
-hold on
-plot(datMotor.rpm,datMotor.maxtorque,'--')
+% figure
+% [C,h] = contour( datMotor.eta_speed, datMotor.eta_torque, datMotor.eta_val);
+% clabel(C,h)
+% h.LineColor='k';
+% xlabel('Speed (rpm)');
+% ylabel('Torque (Nm)');
+% title('Efficiency (%) Contour Maps - Project 4');
+% grid
+% hold on
+% plot(datMotor.rpm,datMotor.maxtorque,'--')
 
 %Battery Data
 
@@ -132,12 +133,12 @@ datBat.C = 150; % Amp hr total battery capacity
 datBat.numSeries = 96;
 datBat.numParallel = 74;
 
-figure
-plot(datBat.SOC,datBat.OCV)
-xlabel('Cell State of Charge ')
-ylabel('Cell Open Circuit Volage (OCV) - Volts')
-title('Lithium Ion Cell Characteristic - Project 4')
-grid
+% figure
+% plot(datBat.SOC,datBat.OCV)
+% xlabel('Cell State of Charge ')
+% ylabel('Cell Open Circuit Volage (OCV) - Volts')
+% title('Lithium Ion Cell Characteristic - Project 4')
+% grid
 
 %% Functions
 function [xp,yp] = trackinfo(L,R,offset,delta_s,delta_theta)
