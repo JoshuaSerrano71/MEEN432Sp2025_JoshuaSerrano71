@@ -57,8 +57,8 @@ disp(['Final Time: ', num2str(carsim.tout(end)), ' seconds']);
 ft = figure();
 ft.WindowState = 'maximized';
 plot(carsim.SOC1)
-xlabel('SOC');
-ylabel('Time');
+xlabel('Time');
+ylabel('SOC');
 title('SOC vs Time');
 
 % Plot track and car motion
