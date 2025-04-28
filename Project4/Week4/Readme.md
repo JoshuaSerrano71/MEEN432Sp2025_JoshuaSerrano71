@@ -1,5 +1,5 @@
 # Project	4	Week 4	Submission
-##  Updataed Electric Vehicle Lateral and Longitudinal Simulation
+##  Updated Electric Vehicle Lateral and Longitudinal Simulation
 
 This code outputs the efficiency contour maps and lithium-ion cell characteristics. The Simulink model simulates the longitudinal and lateral dynamics of an electric vehicle driving around a track (1 lap) through an XY Graph from the initial values provided in the Matlab script.
 <br>
@@ -10,7 +10,7 @@ The updated
 ```markdown
 Download Instructions
 ```
-Download the updated Project 4 Week 1 Simulink model [MEEN432_Project4_Model.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project4/Week4/MEEN432_Project4_Model.slx) and main Matlab code [Project4_init.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project4/Project4_init.m) <br>
+Download the updated Project 4 Week 1 Simulink model [MEEN432_Project4_Model.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project4/Week4/MEEN432_Project4_Model_V2.slx) and main Matlab code [Project4_init.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project4/Project4_init.m) <br>
 <br>
 <br>
 
