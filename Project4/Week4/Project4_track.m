@@ -147,5 +147,6 @@ function [x_track, y_track, x_target, y_target, xi_track, yi_track, xo_track, yo
             yi_track(i) = (track_radius - (track_width/2)) * sin(theta + pi/2) + track_radius;
         end
     end
+    
 end
 
