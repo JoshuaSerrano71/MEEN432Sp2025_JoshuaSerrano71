@@ -10,7 +10,7 @@ The updated
 ```markdown
 Download Instructions
 ```
-Download the updated Project 4 Week 1 Simulink model [MEEN432_Project4_Model.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project4/Week4/MEEN432_Project4_Model_V2.slx) and main Matlab code [Project4_init.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project4/Project4_init.m) <br>
+Download the updated Project 4 Week 1 Simulink model [MEEN432_Project4_Model_V2.slx)](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project4/Week4/MEEN432_Project4_Model_V2.slx), initialization Matlab code [Project4_init.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project4/Project4_init.m) , and main Matlab code [Project4_track.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project4/Week4/Project4_track.m) <br>
 <br>
 <br>
 
@@ -20,7 +20,7 @@ Procedure
 - Place all the files into the same folder and open the folder's directory in Matlab. <br>
 - Run the Project4_init.m script <br>
 - Open the MEEN432_Project4_Model.slx Simulink and locate the XY Graph to view the track (*Figure 1*)
-- Run the MEEN432_Project4_Model.slx Simulink <br>
+- Run the Project4_track.m Matlab code <br>
 
 ![image alt](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project4/Photos/Wk1_XY_Graph.png) <br>
 *Figure 1: Location of the track view in the MEEN432_Project4_Model.slx model, highlighted in blue* <br>
