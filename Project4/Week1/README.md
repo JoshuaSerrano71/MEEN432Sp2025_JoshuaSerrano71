@@ -8,7 +8,7 @@ This code outputs the efficiency contour maps and lithium-ion cell characteristi
 ```markdown
 Download Instructions
 ```
-Download the updated Project 4 Week 1 Simulink model [MEEN432_Project4_Model.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project4/MEEN432_Project4_Model.slx) and main Matlab code [Project4_init.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Project4/Project4_init.m) <br>
+Download the updated Project 4 Week 1 Simulink model [MEEN432_Project4_Model.slx](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/tree/main/Project4/Week1/MEEN432_Project4_Model.slx) and main Matlab code [Project4_init.m](https://github.com/JoshuaSerrano71/MEEN432Sp2025_JoshuaSerrano71/blob/main/Week1/Project4/Project4_init.m) <br>
 <br>
 <br>
 
