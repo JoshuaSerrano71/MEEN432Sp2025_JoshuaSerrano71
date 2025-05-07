@@ -101,7 +101,7 @@ grid on;
 view(3); % 3D view
 hold off;
 
-%% Plot Track - updated to include height changes
+%% Plot Track
 function [x_track, y_track, x_target, y_target, xi_track, yi_track, xo_track, yo_track, s, z_track] = plottrack(track_length, track_radius, track_width)
     l_curve = pi*track_radius;
     total_l = (2*track_length) + (2*l_curve);
